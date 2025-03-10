@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\items\\iitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\items\\iitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\field\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\field\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\board\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\board\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\printer\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\printer\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\player\\iplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\player\\iplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\field\\ifield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\field\\ifield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\field\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\field\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\board\\iboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\board\\iboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\board\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\board\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\game\\igame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\game\\igame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\main\\main\\main.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\Main.csproj|solutionrelative:main\\main.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 190,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Field.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Field\\Field.cs",
+              "RelativeDocumentMoniker": "Main\\Field\\Field.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Field\\Field.cs",
+              "RelativeToolTip": "Main\\Field\\Field.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T22:28:35.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Printer.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Printer\\Printer.cs",
+              "RelativeDocumentMoniker": "Main\\Printer\\Printer.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Printer\\Printer.cs",
+              "RelativeToolTip": "Main\\Printer\\Printer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T00:42:44.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Program.cs",
+              "RelativeDocumentMoniker": "Main\\Program.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Program.cs",
+              "RelativeToolTip": "Main\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T00:42:07.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Board.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Board\\Board.cs",
+              "RelativeDocumentMoniker": "Main\\Board\\Board.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Board\\Board.cs",
+              "RelativeToolTip": "Main\\Board\\Board.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwC4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T19:24:05.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Main\\Player\\Player.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Player\\Player.cs",
+              "RelativeToolTip": "Main\\Player\\Player.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T19:24:44.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoomType.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Field\\RoomType.cs",
+              "RelativeDocumentMoniker": "Main\\Field\\RoomType.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Field\\RoomType.cs",
+              "RelativeToolTip": "Main\\Field\\RoomType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T22:40:01.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IField.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Field\\IField.cs",
+              "RelativeDocumentMoniker": "Main\\Field\\IField.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Field\\IField.cs",
+              "RelativeToolTip": "Main\\Field\\IField.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T22:21:59.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Player\\IPlayer.cs",
+              "RelativeDocumentMoniker": "Main\\Player\\IPlayer.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Player\\IPlayer.cs",
+              "RelativeToolTip": "Main\\Player\\IPlayer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:19:06.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IItem.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Items\\IItem.cs",
+              "RelativeDocumentMoniker": "Main\\Items\\IItem.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Items\\IItem.cs",
+              "RelativeToolTip": "Main\\Items\\IItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T22:21:15.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Items\\Item.cs",
+              "RelativeDocumentMoniker": "Main\\Items\\Item.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Items\\Item.cs",
+              "RelativeToolTip": "Main\\Items\\Item.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T19:25:07.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBoard.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Board\\IBoard.cs",
+              "RelativeDocumentMoniker": "Main\\Board\\IBoard.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Board\\IBoard.cs",
+              "RelativeToolTip": "Main\\Board\\IBoard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:39:25.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Game\\Game.cs",
+              "RelativeDocumentMoniker": "Main\\Game\\Game.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Game\\Game.cs",
+              "RelativeToolTip": "Main\\Game\\Game.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwC4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:48:39.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Move.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Board\\Move.cs",
+              "RelativeDocumentMoniker": "Main\\Board\\Move.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Board\\Move.cs",
+              "RelativeToolTip": "Main\\Board\\Move.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T23:13:57.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Main",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Main.csproj",
+              "RelativeDocumentMoniker": "Main\\Main.csproj",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Main.csproj",
+              "RelativeToolTip": "Main\\Main.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-02T22:21:50.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IGame.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Game\\IGame.cs",
+              "RelativeDocumentMoniker": "Main\\Game\\IGame.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Main\\Main\\Game\\IGame.cs",
+              "RelativeToolTip": "Main\\Game\\IGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:48:51.777Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
