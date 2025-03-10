@@ -2,14 +2,8 @@ namespace Main;
 
 public class Gold : Assets
 {
-    const string name = "Gold";
-    
-
-    public override string GetDataRepresentation() => "Gold";
-
-    public override string GetName() => name;
-
-    public override string GetBoardRepresentation() => "\u20ac";
+    public Gold() => this.name = "Gold";
+    public override string GetBoardRepresentation() => "&";
     
     public override bool AddToPlayerInventory(Player player)
     {

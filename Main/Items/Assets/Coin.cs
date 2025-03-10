@@ -2,14 +2,10 @@ namespace Main;
 
 public class Coin : Assets
 {
-    const string name = "Coin";
-    
-
-    public override string GetDataRepresentation() => "Coin";
-
-    public override string GetName() => name;
-
+   
+    public Coin() => this.name = "Coin";
     public override string GetBoardRepresentation() => "$";
+    
 
     public override bool AddToPlayerInventory(Player player)
     {

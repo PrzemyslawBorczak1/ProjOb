@@ -9,7 +9,7 @@ namespace Main
     public class Printer
     {
        public Board board;
-       int indent = 20;
+       int indent = 10;
        private int boardBeginingR;
        private int boardBeginingC;
        private int buffer;

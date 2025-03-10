@@ -1,9 +1,8 @@
 namespace Main;
 
-public abstract class Decorator : Item /// dodawanie statystyk brakuje
+public abstract class Decorator : Item
 {
     protected Item item;
-    protected string attribute;
     
     
     public override string GetBoardRepresentation() => item.GetBoardRepresentation();
@@ -16,7 +15,7 @@ public abstract class Decorator : Item /// dodawanie statystyk brakuje
    public override bool MoveToPlayerHands(Player player) => item.MoveToPlayerHands(player, this);
     public override bool MoveToPlayerHands(Player player,Item itemR) => item.MoveToPlayerHands(player, itemR);
     
-    public override string GetName() => item.GetName() + attribute;
+    public override string GetName() => item.GetName() + name;
     
     
     public override bool AddToPlayerInventory(Player player, Item itemR) => item.AddToPlayerInventory(player, itemR);

@@ -5,7 +5,6 @@ namespace Main;
 public abstract class Weapon : Item ////////// usunac atak z GetData    ////// zrobic get Name
 {
     protected int damage = 0;
-    protected string name;
     public virtual int Atack() => damage;
     public override string GetName() => name;
     public Weapon(int damage)

@@ -9,7 +9,6 @@ public class Modifier
     
     public int Modify(int value) => value - 5;
     
-    
     public int GetPriority() => priority;
 
 }

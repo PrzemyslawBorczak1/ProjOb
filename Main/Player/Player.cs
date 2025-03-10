@@ -9,7 +9,7 @@ namespace Main
 {
     public class Player
     {
-        Field field;
+        Field? field;
         Queue<Item> inventory = new Queue<Item>();
 
         private Item? lefthand;
@@ -49,19 +49,17 @@ namespace Main
 
         public IEnumerable<string> GetInventoryString()
         {
-            int i = 0;
             yield return "Inventory: ";
             foreach (var item in inventory)
                 yield return  item.GetDataRepresentation();
-           
         }
 
-        public Queue<Item> GetInventory() => inventory;
         public IEnumerable<string> GetHandsString()
         {
             yield return "Right Hand: " + righthand?.GetDataRepresentation();
             yield return "Left Hand: " + lefthand?.GetDataRepresentation();
         }
+        public Queue<Item> GetInventory() => inventory;
         
         
         public Item? DeleteItemFromInventory()
@@ -92,7 +90,6 @@ namespace Main
         }
 
         
-        /// /////////
         public bool AddToFreeHand(Item item)
         {
             if (righthand == null)
@@ -141,9 +138,9 @@ namespace Main
             lefthand = null;
             return ret;
         }
-        
-        public void AddCoin()=> coins++;
-        public void AddGold()=> gold++;
+
+        public void AddCoin() => coins++;
+        public void AddGold() => gold++;
 
         public IEnumerable<string> GetAssets()
         {

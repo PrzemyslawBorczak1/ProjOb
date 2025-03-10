@@ -2,13 +2,14 @@ namespace Main;
 
 public class Strong : Decorator
 {
-    const string nameOfAttribute = "(Strong)";
-    public Strong(Item item) //// zamiana potrzebna bo nie mzoan zakotwiczac dekoratorow
+    const string attribute = "(Strong)";
+    public Strong(Item item)
     {
         this.item = item;
-        this.attribute = nameOfAttribute;
+        this.name = attribute;
     }
-
+    
+    // chyba do usuniecia?
     public override string GetDataRepresentation()
     {
         int? data = GetDataValues();

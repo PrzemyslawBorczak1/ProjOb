@@ -3,17 +3,18 @@ namespace Main
 {
     public class Board 
     {
-        const int R = 30;
-        const int C = 40;
+        private const int R = 30;
+        private const int C = 40;
 
 
-        public Field[,] board;
+        private Field[,] board;
 
-        Player? player;
-        int x;
-        int y;
+        private Player? player;
+        
+        private int x;
+        private int y;
 
-        private RoomType[] roomTypes = { RoomType.Empty, RoomType.Items, RoomType.Wall };
+        private readonly RoomType[] roomTypes = { RoomType.Empty, RoomType.Items, RoomType.Wall };
      
 
         public Board() => GenerateBoard();
@@ -31,16 +32,14 @@ namespace Main
             board[0, 0].AddPlayer(player);
             player.ChangeField(board[0,0]);
         }
-        public void DeletePlayerFromField()
+        private void DeletePlayerFromField()
         {
             board[x, y].DeletePlayer();
-            
         }
-        
-        public void GenerateBoard()
+        private void GenerateBoard()
         {
             board = new Field[GetSizeR(),GetSizeC() ];
-            Random r = new Random(2137);
+            Random r = new (2137);
 
             for (int i = 0; i < GetSizeR(); i++)
             {
@@ -62,22 +61,19 @@ namespace Main
         }
         public (int,int) MovePlayer(Player player, Move move)
         {
-            int xNew, yNew;
-            bool canMove;
-            (xNew, yNew, canMove) = CanMove(player, move);
+            var (xNew, yNew, canMove) = CanMove(player, move);
+            
             if (!canMove)
                 return (-1,-1);
 
             DeletePlayerFromField();
             board[xNew, yNew].AddPlayer(player);
-            (x, y) = (xNew, yNew);
-            return (xNew, yNew);
+            
+            return (x, y) = (xNew, yNew);
         }
-
-        public (int,int,bool) CanMove(Player player, Move move)
+        private (int,int,bool) CanMove(Player player, Move move)
         {
-            int i, j;
-            (i, j) = (x, y);
+            var (i, j) = (x, y);
 
             switch (move)
             {
@@ -94,27 +90,21 @@ namespace Main
                     i++;
                     break;
             }
+            
             if (i < 0 || j < 0 || j >= GetSizeC() || i >= GetSizeR() ||
-                       board[i,j].GetRoomType() == RoomType.Wall)
+                       !board[i,j].CanHavePlayer())
                 return (-1,-1,false);
             
             return (i,j,true);
         }
-
         public (int, int) GetPlayerPosition() => (x,y);
-        public Player GetPlayer() => player;
-
+        public Player? GetPlayer() => player;
         public Field this[int i, int j]
         {
             get => board[i, j];
             set => board[i, j] = value;
         }
-
         public int GetSizeR() => C;
         public int GetSizeC() => R;
-       
-
-       
-
     }
 }

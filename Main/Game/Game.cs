@@ -9,10 +9,10 @@ namespace Main
 {
     class Game
     {
-        Board board;
-        Player player;
+        private Board board;
+        private Player player;
 
-        Printer printer;
+        private Printer printer;
         public Game()
         {
             board = new Board();
@@ -21,31 +21,32 @@ namespace Main
 
             board.AddPlayer(player);
             
-            
             printer.PrintOverlay();
             printer.PrintBoard();
             
             ReadKey();
-            
         }
     
-    
+    // zawsze drukuje wszystko nie zawsze potrzebnie
         void ReadKey()
         {
             char c;
             int x, y;
-            do /////////// poprawic nie zawsze wszystko musi sie drukowac
+            player = board.GetPlayer();
+            
+            if (player == null)
+                return;
+            do
             {
-                printer.PrintData(board.GetPlayer().GetAttributesData());
-                
+                printer.PrintData(player.GetAttributesData());
                 (x, y) = board.GetPlayerPosition();
                 printer.PrintData(player.GetAssets());
                 printer.PrintData(player.GetHandsString());
                 printer.PrintData(player.GetInventoryString());
                 printer.PrintData(board[x,y].GetItemsNames());
+                
                 c = Console.ReadKey(true).KeyChar;
                 printer.ResetData();
-                
                 
                 Item? i;
                 switch (c)
@@ -70,7 +71,7 @@ namespace Main
                         board[x, y].ScrollItems();
                         continue;
                     case 'e':
-                        board[x, y].DeleteItem()?.AddToPlayerInventory(player); /// atrybut to klasa bedzie przechowywac modyfikacje, wtedy item bedzie sie mogl usunac z playera i zabrac modyfikacje
+                        board[x, y].DeleteItem()?.AddToPlayerInventory(player);
                         continue;
                     case 'o':
                         board[x, y].AddItem(player.DeleteItemFromInventory());
@@ -88,7 +89,6 @@ namespace Main
                             board[x,y].DeleteItem();
                         continue;
                     case 'f':
-                        
                         i = player.PeekItemInventory();
                         if(i != null && i.MoveToPlayerHands(player))
                             player.DeleteItemFromInventory();
@@ -108,9 +108,6 @@ namespace Main
                         player.DeleteItemFromLeftHand()?.AddToPlayerInventory(player);
                         continue;
                 }
-                
-                
-                
             } while (c != 'q');
         }
     }

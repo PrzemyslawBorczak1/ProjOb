@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace Main
 {
     public abstract class Item : IItem
+    /// dodac w item pole name
     {
+        public string name = "No Name";
 
         public override string ToString() => throw new NotImplementedException();
 
@@ -28,7 +30,7 @@ namespace Main
 
         public virtual int? GetDataValues() => null;
         
-        public virtual string GetName() => "No Name";
+        public virtual string GetName() => name;
 
 
         public virtual bool MoveToPlayerHands(Player player) => player.AddToFreeHand(this);

@@ -1,6 +1,7 @@
 namespace Main;
 
 public abstract class Attribute
+// klasy attribute do zmiany dodawnie do name
 {
     List<Modifier> modifiers = new List<Modifier>();
     private int val = 10;

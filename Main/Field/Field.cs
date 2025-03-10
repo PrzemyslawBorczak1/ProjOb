@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Main
 {
-    public class Field  ///////// do naprawy odwolania raz po itemAmount a raz po count
+    public class Field
     {
-        Queue<Item> items;
-        int itemsAmount = 0;
+        private Queue<Item> items;// dodac pole item amount i getter
+        private Player? player;
 
-        Player? player;
-
-        RoomType roomType;
+        private RoomType roomType;
 
         public Field(RoomType roomType)
         {
@@ -22,10 +15,10 @@ namespace Main
             if(roomType == RoomType.Items)
             {
                 items.Enqueue(new Sword(0));
-                itemsAmount++;
             }
         }
         public Field() : this(RoomType.Empty) { }
+        public bool CanHavePlayer() => roomType != RoomType.Wall;
 
         public RoomType GetFieldType() => roomType;
         public void SetRoomType(RoomType roomType) => this.roomType = roomType;
@@ -35,23 +28,27 @@ namespace Main
             roomType = RoomType.Player;
         }
         public RoomType GetRoomType() => roomType;
+        
+        
+        // ///  kiepskie
         public void DeletePlayer() {
             player = null;
-            roomType = (items.Count == 0) ? RoomType.Empty : RoomType.Items;  ///  kiepskie
+            roomType = (items.Count == 0) ? RoomType.Empty : RoomType.Items;
         }
+        
+        // do poprawy
         public (ConsoleColor, string) PrintData()
         {
             string ret = (roomType == RoomType.Items) ?
                 items.First().GetBoardRepresentation() : ((char)roomType).ToString();
             
-            
             ConsoleColor color = (roomType == RoomType.Player) ?
                 color = ConsoleColor.Red : ConsoleColor.Black;
             
-                
             return (color, ret);
         }
         
+        // do poprawy
         public void AddItem(Item? item)
         {
             if (item != null)
@@ -65,7 +62,7 @@ namespace Main
         public IEnumerable<string> GetItemsNames()
         {
             yield return "Items on the field: ";
-            foreach (Item item in items)
+            foreach (var item in items)
                 yield return item.GetDataRepresentation();
         }
 
@@ -89,13 +86,14 @@ namespace Main
         {
             if(items.Count == 1)
                 roomType = RoomType.Empty;
+            
             if(items.Count > 0)
                 return items.Dequeue();
             return null;
         }
 
         public Queue<Item> GetItems() => items;
-        public int GetItemsAmount() => itemsAmount;
+        public int GetItemsAmount() => items.Count;
         public Player? GetPlayer() => player;
     }
 

@@ -2,22 +2,22 @@ namespace Main;
 
 public class UnLucky : Decorator //   zmiana atrybutow  playera
 {
-    private const string nameOfAttribute = "(UnLucky)";
+    private const string attribute = "(UnLucky)";
     private Modifier modifier = new Modifier();
     public UnLucky(Item item)
     {
         this.item = item;
-        this.attribute = nameOfAttribute;
+        this.name = attribute;
     }
     
     
-    public override bool AddToPlayerInventory(Player player) //// nie dziala
+    public override bool AddToPlayerInventory(Player player) 
     {
         player.attributes["Luck"].AddModifier(modifier);
         return item.AddToPlayerInventory(player, this);
         
     }
-    public override bool AddToPlayerInventory(Player player,Item itemR) //// nie dziala
+    public override bool AddToPlayerInventory(Player player,Item itemR)
     {
         player.attributes["Luck"].AddModifier(modifier);
         return item.AddToPlayerInventory(player, itemR);
@@ -29,7 +29,6 @@ public class UnLucky : Decorator //   zmiana atrybutow  playera
         player.attributes["Luck"].DeleteModifier(modifier);   
         item.DeletePlayerEffects(player, this);
     }
-    
     public override void DeletePlayerEffects(Player player, Item itemR)
     {
         player.attributes["Luck"].DeleteModifier(modifier);   
