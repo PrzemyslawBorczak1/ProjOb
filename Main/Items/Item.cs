@@ -17,18 +17,18 @@ namespace Main
 
         public virtual string GetBoardRepresentation() => "-";
 
-        public virtual string GetDataRepresentation(Item item) => item.GetDataRepresentation();
+        //public virtual string GetDataRepresentation(Item item) => item.GetDataRepresentation();
         public virtual string GetDataRepresentation()
         {
             
-            int? a = GetDataValues(); 
-            if(a != null)
-                return GetName() + ": " + a.ToString();
+            // int? a = GetDataValues(); 
+            // if(a != null)
+            //     return GetName() + ": " + a.ToString();
             return GetName();
         
         }
 
-        public virtual int? GetDataValues() => null;
+       // public virtual int? GetDataValues() => null;
         
         public virtual string GetName() => name;
 
@@ -40,13 +40,16 @@ namespace Main
         public virtual bool AddToPlayerInventory(Player player) => player.AddItemToInventory(this);
         public virtual bool AddToPlayerInventory(Player player, Item item) => player.AddItemToInventory(item);
         
-        public virtual void DeletePlayerEffects(Player player) {}
-        public virtual void DeletePlayerEffects(Player player, Item item) {}
+     //   public virtual void DeletePlayerEffects(Player player) {}
+       // public virtual void DeletePlayerEffects(Player player, Item item) {}
 
         public bool PlaceOnField(Field field)
         {
             field.AddItem(this);
             return true;
         }
+
+        public virtual Item? DeleteItemFromPlayerInventory(Player player, Item item) => player.DeleteItemFromInventory();
+        public virtual Item? DeleteItemFromPlayerInventory(Player player) => player.DeleteItemFromInventory();
     }
 }

@@ -2,10 +2,10 @@ using System.Text;
 
 namespace Main;
 
-public abstract class Weapon : Item ////////// usunac atak z GetData    ////// zrobic get Name
+public abstract class Weapon : Item, IWeapon ////////// usunac atak z GetData    ////// zrobic get Name
 {
     protected int damage = 0;
-    public virtual int Atack() => damage;
+    public virtual int GetAtack() => damage;
     public override string GetName() => name;
     public Weapon(int damage)
     { 
@@ -14,6 +14,11 @@ public abstract class Weapon : Item ////////// usunac atak z GetData    ////// z
     }
 
     public Weapon() => this.name = "No name";
+    
+    public override string GetDataRepresentation()
+    {
+        return GetName() + ": " + GetAtack().ToString();
+    }
     
     /*
     public override string GetDataRepresentation()
@@ -38,11 +43,11 @@ public abstract class Weapon : Item ////////// usunac atak z GetData    ////// z
     {
         return item.GetDataRepresentation() + GetDataValues(); //// moze nie dzialac + Ienum
     }
-    */
     public override int? GetDataValues()
     {
          return Atack();
     }
+    */
 
 
     /*

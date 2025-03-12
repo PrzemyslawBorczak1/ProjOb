@@ -49,12 +49,15 @@ namespace Main
                     board[i, j] = new Field(roomTypes[rand]);
                     if (rand == 1)
                     {
-                            board[i, j].AddItem(new Strong(new UnLucky(new UnLucky(new Strong(new Bow(0))))));
+                        
                             board[i, j].AddItem(new UnLucky(new UnLucky(new Axe(0))));
-                            board[i, j].AddItem(new UnLucky(new Coin()));
-                            board[i, j].AddItem(new Strong(new UnLucky(new Gold())));
-                            board[i,j].AddItem(new Strong(new BasicItem(0)));
-                            board[i,j].AddItem(new UnLucky(new Strong(new BasicItem(0))));
+                            board[i, j].AddItem(new UnLucky(new Sword()));
+                            
+                            board[i, j].AddItem(new Strong(new Axe(0)));
+                            board[i, j].AddItem(new Strong(new UnLucky(new Strong(new Axe(0)))));
+                            
+                            
+                            board[i, j].AddItem(new Strong(new Strong(new Strong(new Axe(0)))));
                     }
                 }
             }

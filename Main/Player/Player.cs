@@ -62,12 +62,12 @@ namespace Main
         public Queue<Item> GetInventory() => inventory;
         
         
-        public Item? DeleteItemFromInventory()
+       public Item? DeleteItemFromInventory()
         {
             if (inventory.Count > 0)
             {
                 Item ret = inventory.Dequeue();
-                ret.DeletePlayerEffects(this);
+                //ret.DeletePlayerEffects(this);
                 return ret;
             }
 

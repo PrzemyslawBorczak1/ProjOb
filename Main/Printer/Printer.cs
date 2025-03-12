@@ -140,6 +140,7 @@ namespace Main
             
             foreach (var attribute in data)
             {
+                /*
                 if (i > 6){
                     
                     Console.ForegroundColor = ConsoleColor.Yellow;
@@ -149,6 +150,7 @@ namespace Main
                     Console.ResetColor();
                     break;
                 }
+                */
 
                 Console.SetCursorPosition(buffer,  dataTop++);
                 Console.Write(attribute);

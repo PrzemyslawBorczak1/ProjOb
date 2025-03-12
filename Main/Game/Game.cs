@@ -74,13 +74,13 @@ namespace Main
                         board[x, y].DeleteItem()?.AddToPlayerInventory(player);
                         continue;
                     case 'o':
-                        board[x, y].AddItem(player.DeleteItemFromInventory());
+                        board[x, y].AddItem(player.PeekItemInventory()?.DeleteItemFromPlayerInventory(player));
                         continue;
                     case 'i':
                         player.ScrollInventory();
                         continue;
                     case 'u':
-                        while((i = player.DeleteItemFromInventory()) != null)
+                        while((i = player.PeekItemInventory()?.DeleteItemFromPlayerInventory(player)) != null)
                             board[x,y].AddItem(i);
                         continue;
                     case 'r':
@@ -91,7 +91,7 @@ namespace Main
                     case 'f':
                         i = player.PeekItemInventory();
                         if(i != null && i.MoveToPlayerHands(player))
-                            player.DeleteItemFromInventory();
+                            i.DeleteItemFromPlayerInventory(player);
                         continue;
                     
                     case '1':
