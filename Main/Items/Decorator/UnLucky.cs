@@ -11,7 +11,6 @@ public class UnLucky : WeaponDec //   zmiana atrybutow  playera
         this.name = attribute;
     }
     
-    //public override 
     public override bool AddToPlayerInventory(Player player) 
     {
         player.attributes["Luck"].AddModifier(modifier);
@@ -35,23 +34,4 @@ public class UnLucky : WeaponDec //   zmiana atrybutow  playera
         player.attributes["Luck"].DeleteModifier(modifier);   
         return item.DeleteItemFromPlayerInventory(player,itemR);
     }
-/*
-    public override void DeletePlayerEffects(Player player)
-    {
-        player.attributes["Luck"].DeleteModifier(modifier);   
-        item.DeletePlayerEffects(player, this);
-    }
-    public override void DeletePlayerEffects(Player player, Item itemR)
-    {
-        player.attributes["Luck"].DeleteModifier(modifier);   
-        item.DeletePlayerEffects(player, itemR);
-    }
-    /*
-    public override string GetName() => item.GetName() + attribute;
-
-    public override string GetDataRepresentation() //// do poprawy brak statystyk dla weapon
-    {
-        return GetName();
-    }
-    */
 }
