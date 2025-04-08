@@ -344,7 +344,8 @@ public class HideItemFromHandInEq : BasicHandler
             printer.PrintAction("Your hand is empty", ConsoleColor.Red);
             return;
         }
-        player.AddToInventoryEnd(item);
+        // player.AddToInventoryEnd(item);
+        item.AddToPlayerInventory(player);
         printer.RedrawData();
     }
 

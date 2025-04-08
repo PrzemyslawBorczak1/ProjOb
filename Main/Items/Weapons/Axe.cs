@@ -7,6 +7,7 @@ public class Axe : Weapon
     public Axe() => this.name = nameOfItem;
     public override string GetBoardRepresentation() => "A";
     
-    public override bool AddToPlayerHands(Player player) => player.AddToBothHands(this);
-    public override bool AddToPlayerHands(Player player, Item item) => player.AddToBothHands(item);
+  //  public override bool AddToPlayerHands(Player player) => player.AddToBothHands(this);
+    public override bool AddToPlayerHands(Player player, Item? item = null) 
+        => item == null ? player.AddToBothHands(this) : player.AddToBothHands(item);
 }

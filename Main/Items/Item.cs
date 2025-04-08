@@ -21,16 +21,20 @@ namespace ProjOb
         public virtual string GetName() => name;
 
 
-        public virtual bool AddToPlayerHands(Player player) => player.AddToFreeHand(this);
-        public virtual bool AddToPlayerHands(Player player, Item item = null) => player.AddToFreeHand(item);
+       // public virtual bool AddToPlayerHands(Player player) => player.AddToFreeHand(this);
+        public virtual bool AddToPlayerHands(Player player, Item? item = null) 
+            => item == null ?  player.AddToFreeHand(this) : player.AddToFreeHand(item);
 
 
-        public virtual bool AddToPlayerInventory(Player player) => player.AddItemToInventory(this);
-        public virtual bool AddToPlayerInventory(Player player, Item item) => player.AddItemToInventory(item);
+      //  public virtual bool AddToPlayerInventory(Player player) => player.AddItemToInventory(this);
+        public virtual bool AddToPlayerInventory(Player player, Item? item = null) 
+            => item == null ? player.AddItemToInventory(this) : player.AddItemToInventory(item);
         
-        public virtual  void PlaceOnField(Field field)=> field.AddItem(this);
+        public virtual  void PlaceOnField(Field field) => field.AddItem(this);
 
-        public virtual Item? DeleteItemFromPlayerInventory(Player player, Item item) => player.DeleteItemFromInventory();
-        public virtual Item? DeleteItemFromPlayerInventory(Player player) => player.DeleteItemFromInventory();
+        public virtual Item? DeleteItemFromPlayerInventory(Player player, Item? item = null) => item == null ?
+            player.DeleteItemFromInventory(this) : player.DeleteItemFromInventory(item);
+
+        //  public virtual Item? DeleteItemFromPlayerInventory(Player player) => player.DeleteItemFromInventory();
     }
 }

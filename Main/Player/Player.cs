@@ -50,6 +50,9 @@ namespace ProjOb
         public void AddAtributeModifier(AttributeType at, Modifier modifier) => attributes[at].AddModifier(modifier);    
         
         
+        
+        
+        
         public IEnumerable<string> GetInventoryString()
         {
             foreach (var item in inventory)
@@ -62,20 +65,30 @@ namespace ProjOb
                 yield return "Both Hands: " + lefthand.GetDataRepresentation();
             else
             {
-                yield return "Right Hand: " + righthand?.GetDataRepresentation();
                 yield return "Left Hand: " + lefthand?.GetDataRepresentation();
+                yield return "Right Hand: " + righthand?.GetDataRepresentation();
             }
 
         }
         public List<Item> GetInventory() => inventory;
-        
-        
-       public Item? DeleteItemFromInventory(int i = 0)
+
+
+
+
+
+        public  Item? DeleteItemFromInventory(Item item)
+        {
+            if (inventory.Remove(item))
+                return item;
+            return null;
+
+        }
+        public Item? DeleteItemFromInventory(int i =  0)
         {
             if (inventory.Count > i)
             {
                 Item ret = inventory[i];
-                inventory.RemoveAt(i);
+                ret.DeleteItemFromPlayerInventory(this);
                 return ret;
             }
 

@@ -22,7 +22,7 @@ namespace ProjOb
             var chainBuilder = new ChainBuilder();
             
             IDirector director = new NormalDungeon();
-            // director = new DungeonDirectors();
+             //director = new DungeonDirectors();
             
             
             

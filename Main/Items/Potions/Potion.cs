@@ -25,25 +25,28 @@ public abstract class Potion : Item
     
     
     
-
+/*
     public override bool AddToPlayerInventory(Player player)
     {
         player.AddToElixirs(this);
         return true;
     }
-
-    public override bool AddToPlayerInventory(Player player,Item item)
+*/
+    public override bool AddToPlayerInventory(Player player, Item? item = null)
     {
-        player.AddToElixirs((Potion)item);
+        if (item == null)
+            player.AddToElixirs(this);
+        else
+            player.AddToElixirs((Potion)item);
+
         return true;
     }
-
+/*
     public override bool AddToPlayerHands(Player player)
     {
         return AddToPlayerInventory(player);
     }
-    public override bool AddToPlayerHands(Player player, Item item)
-    {
-        return AddToPlayerInventory(player, item);
-    }
+    */
+    public override bool AddToPlayerHands(Player player, Item? item = null) =>  AddToPlayerInventory(player, item);
+   
 }

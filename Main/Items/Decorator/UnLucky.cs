@@ -12,28 +12,38 @@ public class UnLucky : WeaponDec //   zmiana atrybutow  playera
         this.weapon = item;
         this.name = attribute;
     }
-    
+    /*
     public override bool AddToPlayerInventory(Player player) 
     {
         player.AddAtributeModifier(AttributeType.Luck,modifier);
         return item.AddToPlayerInventory(player, this);
         
     }
-    public override bool AddToPlayerInventory(Player player,Item itemR)
+    */
+    public override bool AddToPlayerInventory(Player player,Item? itemR = null)
     {
         player.AddAtributeModifier(AttributeType.Luck,modifier);
-        return item.AddToPlayerInventory(player, itemR);
+        return itemR == null ? item.AddToPlayerInventory(player,this) : item.AddToPlayerInventory(player, itemR);
+        
+        
+        
+        
+      //  return item.AddToPlayerInventory(player, itemR);
         
     }
-    
+    /*
     public override Item? DeleteItemFromPlayerInventory(Player player)
     {
         player.attributes[AttributeType.Luck].DeleteModifier(modifier);   
         return item.DeleteItemFromPlayerInventory(player,this);
     }
-    public override Item? DeleteItemFromPlayerInventory(Player player, Item itemR)
+    
+    */
+    
+    public override Item? DeleteItemFromPlayerInventory(Player player, Item? itemR = null)
     {
         player.attributes[AttributeType.Luck].DeleteModifier(modifier);   
-        return item.DeleteItemFromPlayerInventory(player,itemR);
+        
+        return itemR == null ? item.DeleteItemFromPlayerInventory(player,this) : item.DeleteItemFromPlayerInventory(player, itemR);
     }
 }

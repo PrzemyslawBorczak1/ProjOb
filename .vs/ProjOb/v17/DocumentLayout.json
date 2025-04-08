@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\decorator\\unlucky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\decorator\\unlucky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\decorator\\decorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\decorator\\decorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\game\\commandchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\game\\commandchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\printer\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\printer\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\decorator\\strong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\decorator\\strong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Main\\Player\\Player.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\Player.cs",
+              "RelativeToolTip": "Main\\Player\\Player.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwFEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T16:53:29.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Printer.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Printer\\Printer.cs",
+              "RelativeDocumentMoniker": "Main\\Printer\\Printer.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Printer\\Printer.cs",
+              "RelativeToolTip": "Main\\Printer\\Printer.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAlwLsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T16:52:44.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommandChain.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Game\\CommandChain.cs",
+              "RelativeDocumentMoniker": "Main\\Game\\CommandChain.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Game\\CommandChain.cs",
+              "RelativeToolTip": "Main\\Game\\CommandChain.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAWwHsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T16:47:32.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Item.cs",
+              "RelativeDocumentMoniker": "Main\\Items\\Item.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Item.cs",
+              "RelativeToolTip": "Main\\Items\\Item.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCIAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T16:45:09.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Decorator.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Decorator\\Decorator.cs",
+              "RelativeDocumentMoniker": "Main\\Items\\Decorator\\Decorator.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Decorator\\Decorator.cs",
+              "RelativeToolTip": "Main\\Items\\Decorator\\Decorator.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T16:39:56.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Strong.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Decorator\\Strong.cs",
+              "RelativeDocumentMoniker": "Main\\Items\\Decorator\\Strong.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Decorator\\Strong.cs",
+              "RelativeToolTip": "Main\\Items\\Decorator\\Strong.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T16:39:47.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnLucky.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Decorator\\UnLucky.cs",
+              "RelativeDocumentMoniker": "Main\\Items\\Decorator\\UnLucky.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Decorator\\UnLucky.cs",
+              "RelativeToolTip": "Main\\Items\\Decorator\\UnLucky.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T16:38:03.048Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

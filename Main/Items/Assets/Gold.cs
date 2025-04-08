@@ -4,14 +4,15 @@ public class Gold : Asset
 {
     public Gold() => this.name = "Gold";
     public override string GetBoardRepresentation() => "&";
-    
+    /*
     public override bool AddToPlayerInventory(Player player)
     {
         player.AddGold();
         return true;
     }
+    */
 
-    public override bool AddToPlayerInventory(Player player,Item item)
+    public override bool AddToPlayerInventory(Player player,Item? item = null)
     {
         player.AddGold();
         return true;

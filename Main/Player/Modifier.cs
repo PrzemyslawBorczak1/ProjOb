@@ -6,7 +6,7 @@ public class Modifier
     private int time;
 
     
-    public Modifier(int priority = 0) => this.priority = priority;
+    public Modifier() => this.priority = 0;
     
     public int Modify(int value) => value - 5;
     
