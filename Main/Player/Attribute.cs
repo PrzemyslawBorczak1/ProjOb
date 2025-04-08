@@ -10,8 +10,13 @@ public abstract class Attribute
     public int GetValue()
     {
         int ret = val;
-        foreach (var mod in modifiers.OrderBy(t => t.GetPriority())) /// moze nie dzialac
+        foreach (var mod in modifiers.OrderBy(t => t.GetPriority())) /// moze nie dzialac   zwlaszcza jesli pota ma cos robic na usunieciu
         {
+            if (mod.IsExpired())
+            {
+                modifiers.Remove(mod);
+                TurnSubject.Detach(mod);
+            }
             ret = mod.Modify(ret);
         }
         return ret;

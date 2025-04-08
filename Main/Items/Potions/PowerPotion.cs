@@ -12,6 +12,8 @@ public class PowerPotion : Potion
         this.left = duration;
     }
 
+
+
     public override int Modify(int amount)
     {
         return amount + 2;

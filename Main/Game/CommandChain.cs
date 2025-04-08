@@ -51,9 +51,11 @@ public class MoveHandler : BasicHandler
         }
         printer.PrintField(xNew,yNew);
         printer.PrintField((x, y));
+        TurnSubject.Notify();
         
         printer.RedrawData();
         printer.PrintAction($"You moved {move.ToString()}",ConsoleColor.DarkYellow);
+
         
     }
     public override Object? Handle(Input input)

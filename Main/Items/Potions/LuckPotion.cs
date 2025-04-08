@@ -4,7 +4,7 @@ public class LuckPotion : Potion
 {
     const string itName = "LuckPotion";
 
-    public LuckPotion() :  this(0) { }
+    public LuckPotion() :  this(3) { }
 
 
 
@@ -19,7 +19,7 @@ public class LuckPotion : Potion
 
     public override int Modify(int amount)
     {
-        return amount * (duration - left + 2);
+        return amount * (duration - left + 1);
     }
 
 }

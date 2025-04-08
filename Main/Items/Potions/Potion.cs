@@ -1,9 +1,10 @@
 using System.Reflection;
 
 namespace ProjOb;
+
 using System.Reflection;
 
-public abstract class Potion : Item, IModifier
+public abstract class Potion : Item, IModifier, TurnObserver
 {
     const string itName = "Elixir";
     public int duration = 0;
@@ -44,9 +45,14 @@ public abstract class Potion : Item, IModifier
 
     public virtual AttributeType GetAttributeType() => attributeType;
 
-    public void Drink(Player player) => player.AddAtributeModifier(this);
-
+    public void Drink(Player player)
+    {
+        player.AddAtributeModifier(this);
+        TurnSubject.Attach(this);
+    }
     public int GetPriority() => 0;
 
+    public void Update() => left--;
+    public bool IsExpired() => left <= 0;
 
 }
