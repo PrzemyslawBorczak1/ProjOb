@@ -1,9 +1,22 @@
 using System.Text;
 
-namespace Main;
+using System.Reflection;
+namespace ProjOb;
 
 public abstract class Weapon : Item, IWeapon ////////// usunac atak z GetData    ////// zrobic get Name
 {
+    
+    public static Type[] GetWeapons()
+    {
+        Type baseType = typeof(Weapon);
+        
+        return Assembly.GetExecutingAssembly()
+            .GetTypes()
+            .Where(t => t.IsClass && !t.IsAbstract && baseType.IsAssignableFrom(t))
+            .ToArray();
+    }
+    
+    
     protected int damage = 0;
     public virtual int GetAtack() => damage;
     public override string GetName() => name;

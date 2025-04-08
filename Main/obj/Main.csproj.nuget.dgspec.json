@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Main.csproj": {}
+    "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\WUT\\Main\\Main.csproj": {}
   },
   "projects": {
-    "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Main.csproj": {
+    "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\WUT\\Main\\Main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Main.csproj",
+        "projectUniqueName": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\WUT\\Main\\Main.csproj",
         "projectName": "Main",
-        "projectPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Main.csproj",
+        "projectPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\WUT\\Main\\Main.csproj",
         "packagesPath": "C:\\Users\\przem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\obj\\",
+        "outputPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\WUT\\Main\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

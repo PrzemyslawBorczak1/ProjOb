@@ -1,4 +1,4 @@
-namespace Main;
+namespace ProjOb;
 
 public abstract class Attribute
 // klasy attribute do zmiany dodawnie do name
@@ -23,4 +23,50 @@ public abstract class Attribute
         return "None";
     }
 
+}
+
+
+public class AAggression : Attribute
+{
+    private const string name = "Aggression: ";
+    public override string GetData()
+    {
+        return name + GetValue();
+    }
+}
+
+public class AHealth : Attribute
+{
+    private const string name = "Health: ";
+    public override string GetData()
+    {
+        return name + GetValue();
+    }
+}
+
+public class ALuck : Attribute
+{
+    private const string name = "Luck: ";
+    public override string GetData()
+    {
+        return name + GetValue();
+    }
+}
+
+public class AStrength : Attribute
+{
+    private const string name = "Strength: ";
+    public override string GetData()
+    {
+        return name + GetValue();
+    }
+}
+
+public class AWisdom : Attribute
+{
+    private const string name = "Wisdom: ";
+    public override string GetData()
+    {
+        return name + GetValue();
+    }
 }

@@ -1,52 +1,74 @@
 ﻿
-namespace Main
+namespace ProjOb
 {
     public class Field
     {
-        private Queue<Item> items;// dodac pole item amount i getter
+        private Queue<Item>? items;// dodac pole item amount i getter
         private Player? player;
 
-        private RoomType roomType;
+        private RoomStatus roomStatus;
+        private Enemy? enemy;
 
-        public Field(RoomType roomType)
+        public Field(ERoomType eRoomType)
         {
-            this.roomType = roomType;
+            this.roomStatus = new RoomStatus(eRoomType);
             items  = new Queue<Item>();
-            if(roomType == RoomType.Items)
-            {
-                items.Enqueue(new Sword(0));
-            }
         }
-        public Field() : this(RoomType.Empty) { }
-        public bool CanHavePlayer() => roomType != RoomType.Wall;
 
-        public RoomType GetFieldType() => roomType;
-        public void SetRoomType(RoomType roomType) => this.roomType = roomType;
-        public void AddPlayer(Player player)
-        {
-            this.player = player;
-            roomType = RoomType.Player;
-        }
-        public RoomType GetRoomType() => roomType;
+        public bool CanHaveItems() => roomStatus.CanHaveItems();
+        public Field() : this(ERoomType.Empty) { }
+        public bool CanHavePlayer() => roomStatus.CanHavePlayer();
+        
+        public void ChangeRoomStatus(ERoomType roomStatus) => this.roomStatus = new RoomStatus(roomStatus);
+
+     //   public RoomType GetFieldType() => roomType;
+     //   public void SetRoomType(RoomType roomType) => this.roomType = roomType;
+     public void AddPlayer(Player player) => this.player = player;
+     
+     ///   public RoomStatus GetRoomType() => roomStatus;
         
         
         // ///  kiepskie
-        public void DeletePlayer() {
-            player = null;
-            roomType = (items.Count == 0) ? RoomType.Empty : RoomType.Items;
-        }
+        public void DeletePlayer() => this.player = null;
         
         // do poprawy
+        
+        public bool HasPlayer() => this.player != null;
         public (ConsoleColor, string) PrintData()
         {
-            string ret = (roomType == RoomType.Items) ?
-                items.First().GetBoardRepresentation() : ((char)roomType).ToString();
             
-            ConsoleColor color = (roomType == RoomType.Player) ?
-                color = ConsoleColor.Red : ConsoleColor.Black;
+            if (HasPlayer())
+            {
+                return (ConsoleColor.Red,"P");
+            }
             
-            return (color, ret);
+            
+            
+            ConsoleColor color = ConsoleColor.Gray;
+            
+            string? rep = roomStatus.RoomRepresentation(); 
+            if (rep != null)
+                return (color, rep);
+
+            if (HasEnemy())
+                return (enemy.GetColor(), enemy.GetBoardRepresentation());
+            
+            
+            if(items != null && items.Count > 0)
+                return (color, items.First().GetBoardRepresentation());
+            
+            return (color, " ");
         }
+
+        public bool HasEnemy() => enemy != null;
+
+        public void AddEnemy(Enemy enemy) => this.enemy = enemy;
+
+        public bool CanHaveEnemy() => roomStatus.CanHaveEnemy();
+
+        public Enemy? GetEnemy() => enemy;
+        
+        public bool HasItems() => items != null && items.Count > 0;
         
         // do poprawy
         public void AddItem(Item? item)
@@ -54,14 +76,15 @@ namespace Main
             if (item != null)
             {
                 items.Enqueue(item);
-                roomType = RoomType.Items;
+                //roomStatus = RoomStatus.Items;
             }
         }
 
 
         public IEnumerable<string> GetItemsNames()
         {
-            yield return "Items on the field: ";
+            if(items == null)
+                yield break;
             foreach (var item in items)
                 yield return item.GetDataRepresentation();
         }
@@ -84,9 +107,9 @@ namespace Main
         
         public Item? DeleteItem()
         {
-            if(items.Count == 1)
-                roomType = RoomType.Empty;
-            
+            // if(items.Count == 1)
+            //     roomStatus = RoomStatus.Empty;
+            //
             if(items.Count > 0)
                 return items.Dequeue();
             return null;

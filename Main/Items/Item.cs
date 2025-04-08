@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Main
+namespace ProjOb
 {
     public abstract class Item : IItem
     {
@@ -21,8 +21,8 @@ namespace Main
         public virtual string GetName() => name;
 
 
-        public virtual bool MoveToPlayerHands(Player player) => player.AddToFreeHand(this);
-        public virtual bool MoveToPlayerHands(Player player, Item item) => player.AddToFreeHand(item);
+        public virtual bool AddToPlayerHands(Player player) => player.AddToFreeHand(this);
+        public virtual bool AddToPlayerHands(Player player, Item item = null) => player.AddToFreeHand(item);
 
 
         public virtual bool AddToPlayerInventory(Player player) => player.AddItemToInventory(this);

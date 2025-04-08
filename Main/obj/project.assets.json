@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Main.csproj",
-      "projectName": "Main",
-      "projectPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Main.csproj",
+      "projectUniqueName": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\ProjOb.csproj",
+      "projectName": "ProjOb",
+      "projectPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\ProjOb.csproj",
       "packagesPath": "C:\\Users\\przem\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\obj\\",
       "projectStyle": "PackageReference",

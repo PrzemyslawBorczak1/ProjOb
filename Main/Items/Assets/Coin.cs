@@ -1,6 +1,6 @@
-namespace Main;
+namespace ProjOb;
 
-public class Coin : Assets
+public class Coin : Asset
 {
    
     public Coin() => this.name = "Coin";

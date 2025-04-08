@@ -1,4 +1,4 @@
-namespace Main;
+namespace ProjOb;
 
 public interface IWeapon : IItem
 {

@@ -1,6 +1,6 @@
-namespace Main;
+namespace ProjOb;
 
-public class Gold : Assets
+public class Gold : Asset
 {
     public Gold() => this.name = "Gold";
     public override string GetBoardRepresentation() => "&";

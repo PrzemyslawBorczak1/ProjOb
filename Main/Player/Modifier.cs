@@ -1,11 +1,12 @@
-namespace Main;
+namespace ProjOb;
 
 public class Modifier
 {
     private int priority;
+    private int time;
 
-    public Modifier() => this.priority = 0;
-    public Modifier(int priority) => this.priority = priority;
+    
+    public Modifier(int priority = 0) => this.priority = priority;
     
     public int Modify(int value) => value - 5;
     

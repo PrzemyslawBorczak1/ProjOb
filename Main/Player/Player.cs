@@ -5,18 +5,19 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Main
+namespace ProjOb
 {
     public class Player
     {
         Field? field;
-        Queue<Item> inventory = new Queue<Item>();
+        List<Item> inventory = new List<Item>();
+        private List<Potion> potions = new List<Potion>();
 
         private Item? lefthand;
         private Item? righthand;
 
 
-        public Dictionary<string,Attribute> attributes;
+        public Dictionary<AttributeType,Attribute> attributes;
         
         private AAggression aggression = new AAggression();
         private AHealth health = new AHealth();
@@ -29,63 +30,89 @@ namespace Main
         
         public Player()
         {
-            attributes = new Dictionary<string, Attribute>();
-            attributes.Add("Aggression",aggression);
-            attributes.Add("Health",health);
-            attributes.Add("Luck",luck);
-            attributes.Add("Strength",strength);
-            attributes.Add("Wisdom",wisdom);
+            attributes = new Dictionary<AttributeType, Attribute>();
+            attributes.Add(AttributeType.Aggression,aggression);
+            attributes.Add(AttributeType.Health,health);
+            attributes.Add(AttributeType.Luck,luck);
+            attributes.Add(AttributeType.Strength,strength);
+            attributes.Add(AttributeType.Wisdom,wisdom);
         }
         
         public void ChangeField(Field field) => this.field = field;
 
         public IEnumerable<string> GetAttributesData()
         {
-            yield return "Attributes: ";
             foreach(var attribute in attributes.Values)
                 yield return attribute.GetData();
 
         }
-
+        
+        public void AddAtributeModifier(AttributeType at, Modifier modifier) => attributes[at].AddModifier(modifier);    
+        
+        
         public IEnumerable<string> GetInventoryString()
         {
-            yield return "Inventory: ";
             foreach (var item in inventory)
                 yield return  item.GetDataRepresentation();
         }
 
         public IEnumerable<string> GetHandsString()
         {
-            yield return "Right Hand: " + righthand?.GetDataRepresentation();
-            yield return "Left Hand: " + lefthand?.GetDataRepresentation();
-        }
-        public Queue<Item> GetInventory() => inventory;
-        
-        
-       public Item? DeleteItemFromInventory()
-        {
-            if (inventory.Count > 0)
+            if (lefthand != null && righthand == lefthand)
+                yield return "Both Hands: " + lefthand.GetDataRepresentation();
+            else
             {
-                Item ret = inventory.Dequeue();
-                //ret.DeletePlayerEffects(this);
+                yield return "Right Hand: " + righthand?.GetDataRepresentation();
+                yield return "Left Hand: " + lefthand?.GetDataRepresentation();
+            }
+
+        }
+        public List<Item> GetInventory() => inventory;
+        
+        
+       public Item? DeleteItemFromInventory(int i = 0)
+        {
+            if (inventory.Count > i)
+            {
+                Item ret = inventory[i];
+                inventory.RemoveAt(i);
                 return ret;
             }
 
             return null;
         }
 
-        public bool AddItemToInventory(Item? item)
+        public Potion? DeletePotion(int i = 0)
         {
-            if(item != null) inventory.Enqueue(item);
+            if (potions.Count > i)
+            {
+                Potion ret = potions[i];
+                potions.RemoveAt(i);
+                return ret;
+            }
+
+            return null;
+        }
+
+        public bool AddItemToInventory(Item? item, int nb = 0)
+        {
+            if (item != null)
+                inventory.Insert(nb,item);
             return true;
         }
 
+        public void AddToInventoryEnd(Item? item)
+        {
+            if (item != null)
+                inventory.Add(item);
+        }
         public void ScrollInventory()
         {
             if (inventory.Count > 0)
             {
-                Item item = inventory.Dequeue();
-                inventory.Enqueue(item);
+                Item item = inventory.First();
+                inventory.Remove(item);
+                inventory.Add(item);
             }
         }
 
@@ -115,10 +142,16 @@ namespace Main
             return false;
         }
 
+        public bool AddToElixirs(Potion potion)
+        {
+            potions.Add(potion);
+            return true;
+        }
+
         public Item? PeekItemInventory()
         {
             if (inventory.Count > 0)
-                return inventory.Peek();
+                return inventory[0];
             return null;   
         }
 
@@ -138,16 +171,30 @@ namespace Main
             lefthand = null;
             return ret;
         }
-
+        
+        public bool HasSthInHands() => lefthand != null || righthand != null;
         public void AddCoin() => coins++;
         public void AddGold() => gold++;
 
         public IEnumerable<string> GetAssets()
         {
-            yield return "Assets";
             yield return "Coins: " + coins;
             yield return "Gold: " + gold; 
         }
+
+        public IEnumerable<string> GetElixirsString()
+        {
+            foreach (var potion in potions)
+            {
+                yield return potion.GetName();
+            }
+        }
+        
+        public bool HasElixirs() => potions.Count > 0;
+        
+        
+        public Item? GetLefthand() => lefthand;
+        public Item? GetRighthand() => righthand;
         /*
         Board b;
 

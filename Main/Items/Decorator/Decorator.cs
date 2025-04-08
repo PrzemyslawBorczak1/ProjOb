@@ -1,4 +1,4 @@
-namespace Main;
+namespace ProjOb;
 
 public abstract class Decorator : Item
 {
@@ -8,8 +8,8 @@ public abstract class Decorator : Item
     public override string GetBoardRepresentation() => item.GetBoardRepresentation();
     
 
-   public override bool MoveToPlayerHands(Player player) => item.MoveToPlayerHands(player, this);
-    public override bool MoveToPlayerHands(Player player,Item itemR) => item.MoveToPlayerHands(player, itemR);
+   public override bool AddToPlayerHands(Player player) => item.AddToPlayerHands(player, this);
+    public override bool AddToPlayerHands(Player player,Item itemR) => item.AddToPlayerHands(player, itemR);
     
     public override string GetName() => item.GetName() + name;
     

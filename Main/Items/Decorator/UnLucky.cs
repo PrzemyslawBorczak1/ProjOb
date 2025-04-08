@@ -1,4 +1,6 @@
-namespace Main;
+using System.Reflection;
+
+namespace ProjOb;
 
 public class UnLucky : WeaponDec //   zmiana atrybutow  playera
 {
@@ -13,25 +15,25 @@ public class UnLucky : WeaponDec //   zmiana atrybutow  playera
     
     public override bool AddToPlayerInventory(Player player) 
     {
-        player.attributes["Luck"].AddModifier(modifier);
+        player.AddAtributeModifier(AttributeType.Luck,modifier);
         return item.AddToPlayerInventory(player, this);
         
     }
     public override bool AddToPlayerInventory(Player player,Item itemR)
     {
-        player.attributes["Luck"].AddModifier(modifier);
+        player.AddAtributeModifier(AttributeType.Luck,modifier);
         return item.AddToPlayerInventory(player, itemR);
         
     }
     
     public override Item? DeleteItemFromPlayerInventory(Player player)
     {
-        player.attributes["Luck"].DeleteModifier(modifier);   
+        player.attributes[AttributeType.Luck].DeleteModifier(modifier);   
         return item.DeleteItemFromPlayerInventory(player,this);
     }
     public override Item? DeleteItemFromPlayerInventory(Player player, Item itemR)
     {
-        player.attributes["Luck"].DeleteModifier(modifier);   
+        player.attributes[AttributeType.Luck].DeleteModifier(modifier);   
         return item.DeleteItemFromPlayerInventory(player,itemR);
     }
 }

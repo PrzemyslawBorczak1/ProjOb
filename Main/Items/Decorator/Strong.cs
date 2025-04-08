@@ -1,4 +1,4 @@
-namespace Main;
+namespace ProjOb;
 
 public class Strong : WeaponDec , IWeapon
 {
