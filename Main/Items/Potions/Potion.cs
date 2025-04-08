@@ -3,9 +3,14 @@ using System.Reflection;
 namespace ProjOb;
 using System.Reflection;
 
-public abstract class Potion : Item
+public abstract class Potion : Item, IModifier
 {
     const string itName = "Elixir";
+    public int duration = 0;
+    public int left = 0;
+
+
+    public AttributeType attributeType;
     
 
     public Potion() => this.name = itName;
@@ -22,16 +27,6 @@ public abstract class Potion : Item
     }
     
     
-    
-    
-    
-/*
-    public override bool AddToPlayerInventory(Player player)
-    {
-        player.AddToElixirs(this);
-        return true;
-    }
-*/
     public override bool AddToPlayerInventory(Player player, Item? item = null)
     {
         if (item == null)
@@ -41,12 +36,17 @@ public abstract class Potion : Item
 
         return true;
     }
-/*
-    public override bool AddToPlayerHands(Player player)
-    {
-        return AddToPlayerInventory(player);
-    }
-    */
+    
     public override bool AddToPlayerHands(Player player, Item? item = null) =>  AddToPlayerInventory(player, item);
-   
+
+
+    public virtual int Modify(int amount) => amount;
+
+    public virtual AttributeType GetAttributeType() => attributeType;
+
+    public void Drink(Player player) => player.AddAtributeModifier(this);
+
+    public int GetPriority() => 0;
+
+
 }

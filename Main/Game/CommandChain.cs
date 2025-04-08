@@ -1,3 +1,6 @@
+using ProjOb;
+using System.Numerics;
+
 namespace ProjOb;
 
 public interface IHandler
@@ -354,5 +357,53 @@ public class HideItemFromHandInEq : BasicHandler
 public class ScrollEq
 {
 
+}
+
+public class DrinkPotion : BasicHandler
+
+{
+    public override Object? Handle(Input input)
+    {
+        if (input.GetChar() == 'R' || input.GetChar() == 'r')
+        {
+
+            for (int i = 0; i < 2; i++)
+            {
+                printer.PrintAction("   1-4 to choose potion to drink");
+                ConsoleKeyInfo c = Console.ReadKey(true);
+                switch (c.KeyChar)
+                {
+                    case '1':
+                        DrinkEl(input, 1);
+                        return null;
+                    case '2':
+                        DrinkEl(input, 2);
+                        return null;
+                    case '3':
+                        DrinkEl(input, 3);
+                        return null;
+                    case '4':
+                        DrinkEl(input, 4);
+                        return null;
+                }
+
+            }
+        }
+        return base.Handle(input);
+    }
+    private void DrinkEl(Input input, int nb)
+    {
+        Player player = input.GetPlayer();
+        Potion? potion = player.DeletePotion(nb - 1);
+
+        if (potion == null)
+        {
+            printer.PrintAction($"You dont have {nb} potions");
+            return;
+        }
+
+        potion.Drink(player);
+        printer.RedrawData();
+    }
 }
 

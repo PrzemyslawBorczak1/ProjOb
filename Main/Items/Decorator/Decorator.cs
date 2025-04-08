@@ -3,6 +3,7 @@ namespace ProjOb;
 public abstract class Decorator : Item
 {
     public IItem item;
+
     
     
     public override string GetBoardRepresentation() => item.GetBoardRepresentation();

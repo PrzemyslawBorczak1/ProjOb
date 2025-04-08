@@ -39,6 +39,7 @@ namespace ProjOb
             
             printer = Printer.GetInstance();
             printer.AddBoard(board);
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
             Console.WriteLine("Press key to start");
             Console.ReadKey(true);

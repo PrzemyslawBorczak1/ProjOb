@@ -1,15 +1,36 @@
 namespace ProjOb;
 
-public class Modifier
-{
-    private int priority;
-    private int time;
 
+
+public interface IModifier
+{
+    public int Modify(int amount);
+    public AttributeType GetAttributeType();
+
+    public int GetPriority();
+}
+
+
+public class Modifier : IModifier
+{
+
+    protected AttributeType attributeType;
+    int value;
+
+    public Modifier(AttributeType at, int value) {
+        attributeType = at;
+        this.value = value;
+    }
     
-    public Modifier() => this.priority = 0;
-    
-    public int Modify(int value) => value - 5;
-    
-    public int GetPriority() => priority;
+    public virtual int Modify(int amount) => amount + value;
+
+
+
+    public AttributeType GetAttributeType() => attributeType;
+    public int GetPriority() => 1;
+
 
 }
+
+
+

@@ -42,17 +42,27 @@ namespace ProjOb
 
         public IEnumerable<string> GetAttributesData()
         {
-            foreach(var attribute in attributes.Values)
+            foreach(var attribute in  attributes.Values)
                 yield return attribute.GetData();
 
         }
+
+        public void AddAtributeModifier(AttributeType at, IModifier modifier)
+            => attributes[at].AddModifier(modifier);
+        public void AddAtributeModifier(IModifier modifier)
+            => AddAtributeModifier(modifier.GetAttributeType(), modifier);
+
+
+        public void DeleteModifier(AttributeType at, IModifier modifier)
+            => attributes[at].DeleteModifier(modifier);
         
-        public void AddAtributeModifier(AttributeType at, Modifier modifier) => attributes[at].AddModifier(modifier);    
-        
-        
-        
-        
-        
+
+
+        public void DeleteModifier(IModifier modifier) 
+            => DeleteModifier(modifier.GetAttributeType(), modifier);
+
+
+
         public IEnumerable<string> GetInventoryString()
         {
             foreach (var item in inventory)

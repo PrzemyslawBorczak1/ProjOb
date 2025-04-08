@@ -1,23 +1,24 @@
 namespace ProjOb;
+using System.Linq;
 
 public abstract class Attribute
 // klasy attribute do zmiany dodawnie do name
 {
-    List<Modifier> modifiers = new List<Modifier>();
+    List<IModifier> modifiers = new List<IModifier>();
     private int val = 10;
 
     public int GetValue()
     {
         int ret = val;
-        foreach (var mod in modifiers.OrderBy(mod => mod.GetPriority())) /// moze nie dzialac
+        foreach (var mod in modifiers.OrderBy(t => t.GetPriority())) /// moze nie dzialac
         {
             ret = mod.Modify(ret);
         }
         return ret;
     }
 
-    public virtual void AddModifier(Modifier modifier) => modifiers.Add(modifier);
-    public void DeleteModifier(Modifier modifier) => modifiers.Remove(modifier);
+    public virtual void AddModifier(IModifier modifier) => modifiers.Add(modifier);
+    public void DeleteModifier(IModifier modifier) => modifiers.Remove(modifier);
     public virtual string GetData()
     {
         return "None";

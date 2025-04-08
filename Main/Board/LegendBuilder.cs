@@ -64,6 +64,7 @@ public class LegendBuilder : IBuilder
                       X - drop all
                       C - place item in hand
                       Z - hide sth from hand in eq
+                      R - drink potion
                       """;
             MazeHasItems = true;
             

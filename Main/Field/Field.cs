@@ -3,7 +3,7 @@ namespace ProjOb
 {
     public class Field
     {
-        private Queue<Item>? items;// dodac pole item amount i getter
+        private Queue<Item> items;// dodac pole item amount i getter
         private Player? player;
 
         private RoomStatus roomStatus;
@@ -50,7 +50,7 @@ namespace ProjOb
             if (rep != null)
                 return (color, rep);
 
-            if (HasEnemy())
+            if (enemy != null)
                 return (enemy.GetColor(), enemy.GetBoardRepresentation());
             
             
@@ -71,7 +71,7 @@ namespace ProjOb
         public bool HasItems() => items != null && items.Count > 0;
         
         // do poprawy
-        public void AddItem(Item? item)
+        public void AddItem(Item? item)//
         {
             if (item != null)
             {

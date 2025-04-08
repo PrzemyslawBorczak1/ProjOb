@@ -15,6 +15,8 @@ public class ChainBuilder : IBuilder
             AddToHandler(new DropAllItems());
             AddToHandler(new PlaceItemInHand());
             AddToHandler(new HideItemFromHandInEq());
+            AddToHandler(new DrinkPotion());
+
         }
     }
     
