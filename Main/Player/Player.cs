@@ -218,6 +218,9 @@ namespace ProjOb
         
         public Item? GetLefthand() => lefthand;
         public Item? GetRighthand() => righthand;
+
+
+        public IEnumerable<Attribute> GetAttributes() => attributes.Values;
         /*
         Board b;
 

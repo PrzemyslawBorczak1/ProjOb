@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\player\\turnsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\player\\turnsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\game\\commandchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\game\\commandchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\printer\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\printer\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\potions\\powerpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\potions\\powerpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\potions\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\potions\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\potions\\luckpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\potions\\luckpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\player\\attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\player\\attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\potions\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\potions\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\player\\modifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,24 +35,36 @@
       "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\player\\turnobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\player\\attributetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\player\\attributetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\printer\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\printer\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\game\\commandchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\game\\commandchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\player\\attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\player\\attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\printer\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\printer\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\player\\turnsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\player\\turnsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\player\\attributetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\player\\attributetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\board\\chainbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,20 +75,12 @@
       "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\decorator\\decorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\board\\legendbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\board\\legendbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\field\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\field\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|solutionrelative:main\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60389974-EF02-4595-9406-30E226D4BF8F}|Main\\ProjOb.csproj|c:\\users\\przem\\pulpit\\projektowanie_obiektowe\\repo\\main\\items\\decorator\\strong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,17 +94,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "Section.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Printer\\Section.cs",
+              "RelativeDocumentMoniker": "Main\\Printer\\Section.cs",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Printer\\Section.cs",
+              "RelativeToolTip": "Main\\Printer\\Section.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T22:34:00.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "TurnSubject.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\TurnSubject.cs",
               "RelativeDocumentMoniker": "Main\\Player\\TurnSubject.cs",
               "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\TurnSubject.cs",
               "RelativeToolTip": "Main\\Player\\TurnSubject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T20:51:37.113Z",
               "EditorCaption": ""
@@ -120,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ChainBuilder.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Board\\ChainBuilder.cs",
               "RelativeDocumentMoniker": "Main\\Board\\ChainBuilder.cs",
@@ -133,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "LegendBuilder.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Board\\LegendBuilder.cs",
               "RelativeDocumentMoniker": "Main\\Board\\LegendBuilder.cs",
@@ -146,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Program.cs",
               "RelativeDocumentMoniker": "Main\\Program.cs",
@@ -165,40 +182,40 @@
               "RelativeDocumentMoniker": "Main\\Items\\Potions\\LuckPotion.cs",
               "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Potions\\LuckPotion.cs",
               "RelativeToolTip": "Main\\Items\\Potions\\LuckPotion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T19:20:12.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Potion.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Potions\\Potion.cs",
               "RelativeDocumentMoniker": "Main\\Items\\Potions\\Potion.cs",
               "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Potions\\Potion.cs",
               "RelativeToolTip": "Main\\Items\\Potions\\Potion.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAmwDkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T18:39:53.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Attribute.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\Attribute.cs",
               "RelativeDocumentMoniker": "Main\\Player\\Attribute.cs",
               "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\Attribute.cs",
               "RelativeToolTip": "Main\\Player\\Attribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T18:37:54.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "AttributeType.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\AttributeType.cs",
               "RelativeDocumentMoniker": "Main\\Player\\AttributeType.cs",
@@ -211,13 +228,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PowerPotion.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Potions\\PowerPotion.cs",
               "RelativeDocumentMoniker": "Main\\Items\\Potions\\PowerPotion.cs",
               "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Potions\\PowerPotion.cs",
               "RelativeToolTip": "Main\\Items\\Potions\\PowerPotion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T18:24:59.818Z",
               "EditorCaption": ""
@@ -230,14 +247,14 @@
               "RelativeDocumentMoniker": "Main\\Player\\Modifier.cs",
               "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\Modifier.cs",
               "RelativeToolTip": "Main\\Player\\Modifier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T18:24:30.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Field.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Field\\Field.cs",
               "RelativeDocumentMoniker": "Main\\Field\\Field.cs",
@@ -249,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Game\\Game.cs",
               "RelativeDocumentMoniker": "Main\\Game\\Game.cs",
@@ -262,58 +279,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Main\\Player\\Player.cs",
               "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Player\\Player.cs",
               "RelativeToolTip": "Main\\Player\\Player.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAMcAAAAAAAAAAAA7wOUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T16:53:29.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "Printer.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Printer\\Printer.cs",
               "RelativeDocumentMoniker": "Main\\Printer\\Printer.cs",
-              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Printer\\Printer.cs",
-              "RelativeToolTip": "Main\\Printer\\Printer.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAYwKAAAAAVAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Printer\\Printer.cs*",
+              "RelativeToolTip": "Main\\Printer\\Printer.cs*",
+              "ViewState": "AgIAADkBAAAAAAAAAAAowHcBAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T16:52:44.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "CommandChain.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Game\\CommandChain.cs",
               "RelativeDocumentMoniker": "Main\\Game\\CommandChain.cs",
-              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Game\\CommandChain.cs",
-              "RelativeToolTip": "Main\\Game\\CommandChain.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwEEAAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Game\\CommandChain.cs*",
+              "RelativeToolTip": "Main\\Game\\CommandChain.cs*",
+              "ViewState": "AgIAAGwBAAAAAAAAAAAiwIsBAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T16:47:32.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 9,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Item.cs",
               "RelativeDocumentMoniker": "Main\\Items\\Item.cs",
               "ToolTip": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Item.cs",
               "RelativeToolTip": "Main\\Items\\Item.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCIAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T16:45:09.229Z"
+              "WhenOpened": "2025-04-08T16:45:09.229Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Decorator.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Decorator\\Decorator.cs",
               "RelativeDocumentMoniker": "Main\\Items\\Decorator\\Decorator.cs",
@@ -326,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Strong.cs",
               "DocumentMoniker": "C:\\Users\\przem\\Pulpit\\Projektowanie_Obiektowe\\Repo\\Main\\Items\\Decorator\\Strong.cs",
               "RelativeDocumentMoniker": "Main\\Items\\Decorator\\Strong.cs",

@@ -26,13 +26,16 @@ namespace ProjOb
         private string legendStr;
 
         private int dataTop = 0;
-        
-        
+
+        private int potions;
+        private int potionsTop = 0;
+
+
         //
         // private List<Section> sections = new ();
         // private Dictionary<string, Section> sectionsMap = new();
-        
-        
+
+
 
         private static Printer? _instance = null;
 
@@ -122,6 +125,7 @@ namespace ProjOb
             buffer = x + 2 + indent + 1;
             legend = y + 2;
             legendTop = legend;
+            potions = buffer + 30;
             Console.ResetColor();
 
         }
@@ -178,6 +182,7 @@ namespace ProjOb
             Console.SetCursorPosition(buffer, dataTop++);
             Console.Write("========");
 
+            PrintActivEfects();
 
             if (MazeHasItems)
             {
@@ -309,53 +314,6 @@ namespace ProjOb
             }
 
 
-            // ResetLegend();
-            // Console.SetCursorPosition(0, legendTop++);
-            // Console.WriteLine("  (W/A/S/D) to move");
-            // if (board != null)
-            // {
-            //     if (MazeHasItems)
-            //     {
-            //         var (i, j) = board.GetPlayerPosition();
-            //         if (board[i, j].HasItems())
-            //         {
-            //
-            //             Console.SetCursorPosition(0, legendTop);
-            //             Console.WriteLine("""
-            //                               E - pick up item
-            //                               P - scroll items on the field
-            //                               R - take item from field to free hand
-            //                               """);
-            //             legendTop += 3;
-            //         }
-            //
-            //         if (player.GetInventory().Count != 0)
-            //         {
-            //
-            //             Console.SetCursorPosition(0, legendTop);
-            //             Console.WriteLine("""
-            //                               O - drop item
-            //                               I - scroll inventory
-            //                               U - drop all items from inventory
-            //                               F - take item form inventory to free hand
-            //                               """);
-            //             legendTop += 4;
-            //         }
-            //
-            //         if (player.HasSthInHands())
-            //         {
-            //
-            //             Console.SetCursorPosition(0, legendTop);
-            //             Console.WriteLine("""
-            //                               1 / 2 - drop item from right / left hand on the field
-            //                               3 / 4 - move item from right / left hand to inventory
-            //                               """);
-            //             legendTop += 2;
-            //         }
-            //     }
-            //
-            //
-
 
             }
 
@@ -373,7 +331,9 @@ namespace ProjOb
         {
             
             ResetData();
+
             PrintPlayerData();
+            PrintActivEfects();
             
             if (board != null)
             {
@@ -385,9 +345,37 @@ namespace ProjOb
 
 
 
+        public void PrintActivEfects()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
 
+            ResetActivEfects();
+            if (player == null)
+                return;
+            foreach(var at in player.GetAttributes())
+            {
+                foreach (var mod in at.GetModifiers())
+                {
+                    Console.SetCursorPosition(potions, potionsTop++);
+                    Console.Write(mod.GetEfectRepresentation());
+                }
+            }
+            Console.ResetColor();
+        }
 
+        public void ResetActivEfects()
+        {
 
+            string spaces = new string(' ', 40);
+            while (potionsTop > 0)
+            {
+                Console.SetCursorPosition(potions, potionsTop--);
+                Console.Write(spaces);
+            }
+
+            Console.SetCursorPosition(potions, potionsTop);
+            Console.Write(spaces);
+        }
 
     }
 }

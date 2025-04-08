@@ -11,6 +11,8 @@ public interface IModifier : TurnObserver
 
     public bool IsExpired();
 
+    public string GetEfectRepresentation();
+
 }
 
 
@@ -34,6 +36,17 @@ public class Modifier : IModifier
     public void Update() { }
 
     public bool IsExpired() => false;
+
+
+
+    public string GetEfectRepresentation()
+    {
+        if(value > 0)
+            return $"Weapon Modifier {attributeType.ToString()}: +{value}";
+        else
+            return $"Weapon Modifier {attributeType.ToString()}: {value}";
+    }   
+
 }
 
 

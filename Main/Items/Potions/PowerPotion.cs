@@ -18,5 +18,8 @@ public class PowerPotion : Potion
     {
         return amount + 2;
     }
-
+    public override string GetEfectRepresentation()
+    {
+        return $"PowerPotion {attributeType} +{2}  for {left} turns";
+    }
 }

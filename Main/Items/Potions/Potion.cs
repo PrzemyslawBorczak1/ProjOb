@@ -54,5 +54,5 @@ public abstract class Potion : Item, IModifier, TurnObserver
 
     public void Update() => left--;
     public bool IsExpired() => left <= 0;
-
+    public virtual string GetEfectRepresentation() => "Potion";
 }

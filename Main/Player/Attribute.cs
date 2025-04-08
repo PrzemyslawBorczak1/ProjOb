@@ -28,6 +28,7 @@ public abstract class Attribute
     {
         return "None";
     }
+    public List<IModifier> GetModifiers() => modifiers;
 
 }
 

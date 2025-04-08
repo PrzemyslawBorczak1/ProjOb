@@ -22,4 +22,9 @@ public class LuckPotion : Potion
         return amount * (duration - left + 1);
     }
 
+    public override string GetEfectRepresentation()
+    {
+        return $"LuckyPotion {attributeType} x{(duration - left + 1)}  for {left} turns";
+    }
+
 }

@@ -400,7 +400,7 @@ public class DrinkPotion : BasicHandler
 
         if (potion == null)
         {
-            printer.PrintAction($"You dont have {nb} potions");
+            printer.PrintAction($"You dont have {nb} potions",ConsoleColor.Red);
             return;
         }
 
