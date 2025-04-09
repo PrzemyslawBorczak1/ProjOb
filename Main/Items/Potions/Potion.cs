@@ -45,7 +45,7 @@ public abstract class Potion : Item, IModifier, TurnObserver
 
     public virtual AttributeType GetAttributeType() => attributeType;
 
-    public void Drink(Player player)
+    public virtual void Drink(Player player)
     {
         player.AddAtributeModifier(this);
         TurnSubject.Attach(this);

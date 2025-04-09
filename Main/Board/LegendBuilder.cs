@@ -1,9 +1,13 @@
+using System;
+using System.Reflection;
+
 namespace ProjOb;
 
 public class LegendBuilder : IBuilder
 {
     private string legend;
     private bool MazeHasItems = false;
+    private bool MazeHasPotions = false;
     
 
     public void GenerateEmptyDungeon() => legend = "";
@@ -19,8 +23,20 @@ public class LegendBuilder : IBuilder
     
     
     public void AddWeapons()=> ItemMethod();
-    
-    public void AddPotions()=> ItemMethod();
+
+    public void AddPotions()
+    {
+        ItemMethod();
+        if (!MazeHasPotions)
+        {
+            legend += "\nR - drink potion";
+            MazeHasPotions = true;
+
+
+            Printer printer = Printer.GetInstance();
+            printer.AddLegened(legend);
+        }
+    }
     
     public void AddModifiedWeapons()=> ItemMethod();
     
@@ -35,36 +51,15 @@ public class LegendBuilder : IBuilder
         
         if (!MazeHasItems)
         {
-            legend += """
-                      
-                      E - pick up item
-                      P - scroll items on the field
-                      R - take item from field to free hand
-                      """;
+            
             
             legend += """
                       
-                      O - drop item
-                      I - scroll inventory
-                      U - drop all items from inventory
-                      F - take item form inventory to free hand
-                      """;
-            legend += """
-                      
-                      1 / 2 - drop item from right / left hand on the field
-                      3 / 4 - move item from right / left hand to inventory
-                      """;
-            
-            legend += """
-                      
-                      implemented:
-                      (W/A/S/D) to move
                       E - pick up item
-                      F - drop iteme
-                      X - drop all
-                      C - place item in hand
-                      Z - hide sth from hand in eq
-                      R - drink potion
+                      F - drop item
+                      X - drop all items
+                      C - place item in hands
+                      Z - hide item from hand to eq
                       """;
             MazeHasItems = true;
             

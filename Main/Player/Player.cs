@@ -221,6 +221,12 @@ namespace ProjOb
 
 
         public IEnumerable<Attribute> GetAttributes() => attributes.Values;
+
+
+        public void ChangeAttribute(AttributeType at,int amount) =>  attributes[at].ChangeAttribute(amount);
+        
+
+
         /*
         Board b;
 

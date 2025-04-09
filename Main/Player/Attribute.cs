@@ -16,6 +16,7 @@ public abstract class Attribute
             {
                 modifiers.Remove(mod);
                 TurnSubject.Detach(mod);
+                continue;
             }
             ret = mod.Modify(ret);
         }
@@ -29,6 +30,8 @@ public abstract class Attribute
         return "None";
     }
     public List<IModifier> GetModifiers() => modifiers;
+
+    public void ChangeAttribute(int amount) => val += amount;
 
 }
 

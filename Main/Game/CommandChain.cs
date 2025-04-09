@@ -54,6 +54,7 @@ public class MoveHandler : BasicHandler
         TurnSubject.Notify();
         
         printer.RedrawData();
+       
         printer.PrintAction($"You moved {move.ToString()}",ConsoleColor.DarkYellow);
 
         
@@ -405,6 +406,7 @@ public class DrinkPotion : BasicHandler
         }
 
         potion.Drink(player);
+        printer.RedrawData();
         printer.RedrawData();
     }
 }

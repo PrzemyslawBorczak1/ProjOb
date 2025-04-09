@@ -4,6 +4,7 @@ public class ChainBuilder : IBuilder
 {
     IHandler? handler = null;
     private bool HasItems = false;
+    private bool MazeHasPotions = false;
 
     void ItemMethod()
     {
@@ -15,7 +16,6 @@ public class ChainBuilder : IBuilder
             AddToHandler(new DropAllItems());
             AddToHandler(new PlaceItemInHand());
             AddToHandler(new HideItemFromHandInEq());
-            AddToHandler(new DrinkPotion());
 
         }
     }
@@ -45,8 +45,16 @@ public class ChainBuilder : IBuilder
     
     
     public void AddWeapons() => ItemMethod();
-    
-    public void AddPotions() => ItemMethod();
+
+    public void AddPotions()
+    {
+        ItemMethod();
+        if (!MazeHasPotions)
+        {
+            AddToHandler(new DrinkPotion());
+            MazeHasPotions = true;
+        }
+    }
     
     public void AddModifiedWeapons() => ItemMethod();   
     
